@@ -1,0 +1,10 @@
+#glitter1, #glitter2, #glitter3 {
+    position: absolute;
+}
+
+body {
+    background: url("images/bg.jpg") no-repeat center fixed;
+    background-color: black;
+    background-size: cover;
+    overflow: hidden; /* No Scrollbars */
+}
