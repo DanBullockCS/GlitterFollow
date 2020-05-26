@@ -1,6 +1,17 @@
-#glitter1, #glitter2, #glitter3 {
+.glitter {
     position: absolute;
+    pointer-events: none;
+    transition: 0.8s;
 }
+
+#glitter1 { transition: 0.4s;}
+#glitter2 { transition: 0.35s;}
+#glitter3 { transition: 0.3s;}
+#glitter4 { transition: 0.25s;}
+#glitter5 { transition: 0.2s;}
+#glitter6 { transition: 0.15s;}
+#glitter7 { transition: 0.1s;}
+#glitter8 { transition: 0.05s;}
 
 body {
     background: url("images/bg.jpg") no-repeat center fixed;

@@ -1,24 +1,8 @@
-var mouseX = 0;
-var mouseY = 0;
+var glitterOffset = 8; // The width and height of the image divided by 2
 
-$(document).mousemove(function(e) {
-    // offset the images
-    $("#glitter1").css({left:e.pageX, top:e.pageY});
-    $("#glitter2").css({left:e.pageX, top:e.pageY});
-    $("#glitter3").css({left:e.pageX, top:e.pageY});
-
-    if (e.pageY < mouseY) {
-        console.log('Moving Up');
-    } else {
-        console.log('Moving Down');
-    }
-    mouseY = e.pageY;
-    
-    if (e.pageX < mouseX) {
-        console.log('Moving Left');
-    } else {
-        console.log('Moving Right');
-    }
-    mouseX = e.pageX
-
+$(document).ready(function() {
+    $(document).mousemove(function(e) {
+        // offset the images
+        $(".glitter").css({left:e.pageX - glitterOffset, top:e.pageY - glitterOffset});
+    });
 });
